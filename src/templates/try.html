@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h3>This is an apple</h3>
+
+<img src="{{ url_for('static', filename='/kmeanai/src/static/uploads/passport.jpg') }}"
+    class="image"/>
+
+<h3>This is an orange</h3>
+
+<img src="{{ url_for('static', filename='kmeanai/src/static/uploads/passport.jpg') }}"
+    class="image"/>
+
+<h3>This is a pear</h3>
+
+<img src="{{ url_for('static', filename='D:/sanchit/programming_shit/AIML/dockerok/src/static/uploads/passport.jpg') }}"
+    class="image"/>
+
+<h3>This is a pear</h3>
+
+<img src="{{ url_for('static', filename='/dockerok/src/static/uploads/passport.jpg') }}"
+    class="image"/>
+
+<h3>This is a pear</h3>
+
+<img src="{{ url_for('static', filename='dockerok/src/static/uploads/passport.jpg') }}"
+    class="image"/>
+
+<h3>This is a pear</h3>
+
+<img src="{{ url_for('static', filename='uploads/passport.jpg') }}"
+    class="image"/>
+    
+
+<style>
+    .image {
+        width: 200px;
+    }
+</style>
+</body>
+</html>

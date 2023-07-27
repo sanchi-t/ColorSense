@@ -1,0 +1,11 @@
+version: '3'
+services:
+  flask-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 5000:5000
+    volumes:
+      - D:/sanchit/programming_shit/AIML/dockerok/src/static/uploads:/kmeanai/src/static/uploads
+      - D:/sanchit/programming_shit/AIML/dockerok/src/static/output:/kmeanai/src/static/output

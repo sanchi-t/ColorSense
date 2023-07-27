@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+ <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+  </head>
+
+    <style>
+      .img-container {
+        text-align: center;
+      }
+    </style>
+  <body>
+     <section>
+        <div class="container p-5">
+
+            <div class="row">
+                <div class="col-lg-8 col-md-10 col-sm-12 mx-auto">
+                    <div class="p-5 bg-white shadow rounded-lg">
+
+                        <div id="success_alert" class="alert alert-success" role="alert" style="display:none;"></div>
+
+<div  class="img-container" >
+    <h3  >Image Segmentation </h3>
+    <p  >Detect segments in image</p>
+
+
+
+  <!--  <div>
+        {{jsonfile}}
+    </div> -->
+
+
+
+
+ {% if is_image %}
+        {% if is_show_button %}
+           <form action="/detect_object" method="post" target="_blank">
+          <img src="{{ url_for('static', filename='uploads/' + user_image) }}" alt="User Image"   width="500" >
+          <p>{{k_value}}</p>
+          <label>Enter the RGB values for each color:</label>
+          <br>
+          {% for i in range(k_value) %}
+            <label for="color{{ i }}">Enter the rgb values for color {{ i }}:</label>
+            <input id="color{{ i }}" name="color{{ i }}" type="text" pattern="\d+,\s*\d+,\s*\d+"></input><br><br>
+          {% endfor %}
+           <button type="submit" style="width:200px" class="btn btn-primary btn-block rounded-pill shadow"> Detect Object</button>
+            </form>
+        {% else %}
+
+          <img src="{{ url_for('static', filename='output/' + user_image) }}" alt="User Image output"   width="500" >
+
+        {% endif %}
+
+ {% else %}
+    <form action="/detect_object" method="post" target="_blank">
+     <video src="{{ user_image }}" controls="controls"  class="img-container"  width="500" >  </video>
+       <button type="submit" style="width:200px" class="btn btn-primary btn-block rounded-pill shadow"> Image Segmentation</button>
+        </form>
+      {% endif %}
+     </div>
+
+         </div>
+        </div>
+    </section>
+    </body>
+
+</html>
