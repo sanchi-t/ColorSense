@@ -54,7 +54,7 @@ If you are interested in deploying ColorSense on Kubernetes, follow the steps be
 1. **Apply Kubernetes Manifests:**
 
     ```bash
-    cd kubernetes/
+    cd kubernetes
     ```
 
     ```bash
