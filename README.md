@@ -10,7 +10,7 @@ ColorSense is an image processing application that allows users to upload an ima
 
 - **Color Customization**: Users can interactively customize the color of each segment by entering RGB values.
 
-- **Preview**: A real-time preview is provided to visualize the changes made to the image.
+- **Preview**: A preview is provided to visualize the changes made to the image.
 
 - **Dockerized**: The entire application is containerized using Docker, ensuring easy deployment and consistent behavior across different environments.
 
@@ -26,7 +26,7 @@ Before running ColorSense, ensure you have the following dependencies installed:
 1. **Clone the Repository:**
 
     ```bash
-    git clone https://github.com/yourusername/colorsense.git
+    git clone https://github.com/sanchi-t/ColorSense.git
     ```
 
 2. **Navigate to the Project Directory:**
@@ -80,13 +80,9 @@ If you want to contribute to ColorSense, follow these steps:
 4. Push to the branch: `git push origin feature-name`.
 5. Submit a pull request.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
 - The ColorSense project is built using Flask, k-means clustering, and Docker.
-- Special thanks to the open-source community for their contributions.
 
 Feel free to customize this README according to your specific project details and needs.
