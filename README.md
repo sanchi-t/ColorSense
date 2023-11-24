@@ -13,6 +13,8 @@ ColorSense is an image processing application that allows users to upload an ima
 - **Preview**: A preview is provided to visualize the changes made to the image.
 
 - **Dockerized**: The entire application is containerized using Docker, ensuring easy deployment and consistent behavior across different environments.
+  
+- **Kubernetes Provisioning**: For those interested in deploying the application on Kubernetes, instructions are provided in the [Kubernetes](#kubernetes) section.
 
 ## Prerequisites
 
@@ -44,6 +46,30 @@ Before running ColorSense, ensure you have the following dependencies installed:
 4. **Access the Application:**
 
     Open your web browser and go to [http://localhost:5000](http://localhost:5000) to use ColorSense.
+
+## Kubernetes
+
+If you are interested in deploying ColorSense on Kubernetes, follow the steps below:
+
+1. **Apply Kubernetes Manifests:**
+
+    ```bash
+    cd kubernetes/
+    ```
+
+    ```bash
+    kubectl apply -f kubernetes/
+    ```
+
+2. **Access the Application:**
+
+    Once the pods are running, the application will be accessible. You can find the service details using:
+
+    ```bash
+    kubectl get svc colorsense-service
+    ```
+
+    Access the application using the provided `EXTERNAL-IP`.
 
 ## Usage
 
