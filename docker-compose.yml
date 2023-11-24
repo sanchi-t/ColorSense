@@ -7,5 +7,5 @@ services:
     ports:
       - 5000:5000
     volumes:
-      - D:/sanchit/programming_shit/AIML/dockerok/src/static/uploads:/kmeanai/src/static/uploads
-      - D:/sanchit/programming_shit/AIML/dockerok/src/static/output:/kmeanai/src/static/output
+      - colorsense/src/static/uploads:/kmeanai/src/static/uploads
+      - colorsense/src/static/output:/kmeanai/src/static/output

@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: flask-app-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: flask-app-container
+  template:
+    metadata:
+      labels:
+        app: flask-app-container
+    spec:
+      containers:
+      - name: flask-app-container
+        image: 0sanchits/kmeansai:latest
+        ports:
+        - containerPort: 5000
+        volumeMounts:
+        - name: uploads-volume
+          mountPath: /kmeanai/src/static/uploads
+      volumes:
+      - name: uploads-volume
+        persistentVolumeClaim:
+          claimName: local-pvc
