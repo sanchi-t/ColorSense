@@ -63,11 +63,12 @@ Before running ColorSense, ensure you have the following dependencies installed:
 
 ## Images
 
-![Alt text](brave_MPUnUfwsGs.png)
-![Alt text](brave_qZvbnggbQH.png)
-![Alt text](brave_6gFIHJ2sLJ.png)
-![Alt text](brave_2LO3VTzI9z.png)
-![Alt text](brave_uSjozZkz1v.png)
+![brave_MPUnUfwsGs](https://github.com/sanchi-t/ColorSense/assets/98596642/05627854-6645-46e2-94eb-2fe94d68e3a2)
+![brave_qZvbnggbQH](https://github.com/sanchi-t/ColorSense/assets/98596642/3ac03c4e-34dc-43d8-8a17-bff6c0988522)
+![brave_6gFIHJ2sLJ](https://github.com/sanchi-t/ColorSense/assets/98596642/da9121f4-537e-4868-a08a-be9008345572)
+![brave_2LO3VTzI9z](https://github.com/sanchi-t/ColorSense/assets/98596642/60e99281-4923-4f18-9c50-0881744e011b)
+![brave_uSjozZkz1v](https://github.com/sanchi-t/ColorSense/assets/98596642/6c9052b4-9af3-4d0f-982f-a60f3723798c)
+
 
 ## Contributing
 
